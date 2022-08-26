@@ -1,0 +1,242 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Register Feature",
+    "line": 2,
+    "id": "register-feature",
+    "tags": [
+      {
+        "name": "@register",
+        "line": 1
+      }
+    ],
+    "uri": "register.feature",
+    "elements": [
+      {
+        "id": "register-feature;register-with-valid-data",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Register With Valid Data",
+        "tags": [
+          {
+            "name": "@register",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Open SehatQ register page",
+            "result": {
+              "status": "passed",
+              "duration": 2923000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User register with valid data",
+            "result": {
+              "status": "passed",
+              "duration": 5331000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Success register",
+            "result": {
+              "status": "passed",
+              "duration": 9697000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "register-feature;register-invalid-with-invalid-name",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Register Invalid With Invalid Name",
+        "tags": [
+          {
+            "name": "@register",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "Open SehatQ register page",
+            "result": {
+              "status": "passed",
+              "duration": 3343000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "User register with data name '123', email 'test@gmail.com', password '123456'",
+            "result": {
+              "status": "passed",
+              "duration": 4540000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "Show message error \"Nama lengkap harus diisi dengan huruf.\"",
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "register-feature;register-invalid-with-invalid-email",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Register Invalid With Invalid Email",
+        "tags": [
+          {
+            "name": "@register",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "Open SehatQ register page",
+            "result": {
+              "status": "passed",
+              "duration": 2480000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "User register with data name 'Automation', email 'testgmail', password '123456'",
+            "result": {
+              "status": "passed",
+              "duration": 4748000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "Show message error \"Email harus diisi dengan benar.\"",
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "register-feature;register-invalid-with-invalid-password",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Register Invalid With Invalid Password",
+        "tags": [
+          {
+            "name": "@register",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "Open SehatQ register page",
+            "result": {
+              "status": "passed",
+              "duration": 2645000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "User register with data name 'Automation', email 'test@gmail.com', password '123'",
+            "result": {
+              "status": "passed",
+              "duration": 4607000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "Show message error \"Password harus diisi minimal 6\"",
+            "result": {
+              "status": "passed",
+              "duration": 26000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "register-feature;register-invalid-with-email-registered",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Register Invalid With Email Registered",
+        "tags": [
+          {
+            "name": "@register",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "Open SehatQ register page",
+            "result": {
+              "status": "passed",
+              "duration": 2313000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "User register with data name 'Automation', email 'jiungkuy@gmail.com', password '123456'",
+            "result": {
+              "status": "passed",
+              "duration": 4767000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "Show message error \"Email sudah ada, mohon gunakan email lain\"",
+            "result": {
+              "status": "passed",
+              "duration": 207000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

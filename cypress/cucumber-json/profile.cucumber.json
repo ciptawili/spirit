@@ -1,0 +1,404 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Profile Feature",
+    "line": 2,
+    "id": "profile-feature",
+    "tags": [
+      {
+        "name": "@profile",
+        "line": 1
+      }
+    ],
+    "uri": "profile.feature",
+    "elements": [
+      {
+        "id": "profile-feature;edit-profile-with",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Edit Profile With",
+        "tags": [
+          {
+            "name": "@profile",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Open SehatQ login page",
+            "result": {
+              "status": "passed",
+              "duration": 3058000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User login with email 'jiungkuy@gmail.com' and password 'Coba@123'",
+            "result": {
+              "status": "passed",
+              "duration": 25840000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Open SehatQ profile page",
+            "result": {
+              "status": "passed",
+              "duration": 5444000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "User edit profile with valid data",
+            "result": {
+              "status": "passed",
+              "duration": 12344000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Success edit profile",
+            "result": {
+              "status": "passed",
+              "duration": 1434000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "profile-feature;edit-profile-invalid-data-with-invalid-name",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Edit Profile Invalid Data With Invalid Name",
+        "tags": [
+          {
+            "name": "@profile",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "Open SehatQ login page",
+            "result": {
+              "status": "passed",
+              "duration": 4828000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "User login with email 'jiungkuy@gmail.com' and password 'Coba@123'",
+            "result": {
+              "status": "passed",
+              "duration": 21161000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "Open SehatQ profile page",
+            "result": {
+              "status": "passed",
+              "duration": 6320000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "User edit profile with valid data name '123', height '180', weight '90', phone '08782521297', address 'Jalanin'",
+            "result": {
+              "status": "passed",
+              "duration": 13572000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "Show message error \"Nama harus diisi dengan huruf.\"",
+            "result": {
+              "status": "passed",
+              "duration": 26000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "profile-feature;edit-profile-invalid-data-with-invalid-height",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Edit Profile Invalid Data With Invalid Height",
+        "tags": [
+          {
+            "name": "@profile",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "Open SehatQ login page",
+            "result": {
+              "status": "passed",
+              "duration": 3052000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "User login with email 'jiungkuy@gmail.com' and password 'Coba@123'",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://account.sehatq.com/__cypress/runner/cypress_runner.js:151177:74)\n    at https://account.sehatq.com/__cypress/runner/cypress_runner.js:151609:16\n    at tryCatcher (https://account.sehatq.com/__cypress/runner/cypress_runner.js:11318:23)\n    at https://account.sehatq.com/__cypress/runner/cypress_runner.js:6440:41\n    at tryCatcher (https://account.sehatq.com/__cypress/runner/cypress_runner.js:11318:23)\n    at Promise._settlePromiseFromHandler (https://account.sehatq.com/__cypress/runner/cypress_runner.js:9253:31)\n    at Promise._settlePromise (https://account.sehatq.com/__cypress/runner/cypress_runner.js:9310:18)\n    at Promise._settlePromise0 (https://account.sehatq.com/__cypress/runner/cypress_runner.js:9355:10)\n    at Promise._settlePromises (https://account.sehatq.com/__cypress/runner/cypress_runner.js:9431:18)\n    at _drainQueueStep (https://account.sehatq.com/__cypress/runner/cypress_runner.js:6025:12)\n    at _drainQueue (https://account.sehatq.com/__cypress/runner/cypress_runner.js:6018:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://account.sehatq.com/__cypress/runner/cypress_runner.js:6034:5)\n    at Async.drainQueues (https://account.sehatq.com/__cypress/runner/cypress_runner.js:5904:14)\nFrom Your Spec Code:\n    at Context.stepTest (https://account.sehatq.com/__cypress/tests?p=cypress/e2e/features/profile.feature:16307:6)\n    at eval (https://account.sehatq.com/__cypress/tests?p=cypress/e2e/features/profile.feature:16326:22)\nat Array.forEach (<anonymous>)\n    at Context.eval (https://account.sehatq.com/__cypress/tests?p=cypress/e2e/features/profile.feature:16325:24)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "Open SehatQ profile page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "User edit profile with valid data name 'Automation', height '18o', weight '90', phone '08782521297', address 'Jalanin'",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "Show message error \"Tinggi Badan harus diisi dengan benar\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "profile-feature;edit-profile-invalid-data-with-invalid-weight",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Edit Profile Invalid Data With Invalid Weight",
+        "tags": [
+          {
+            "name": "@profile",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "Open SehatQ login page",
+            "result": {
+              "status": "passed",
+              "duration": 28839000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "User login with email 'jiungkuy@gmail.com' and password 'Coba@123'",
+            "result": {
+              "status": "passed",
+              "duration": 17512000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "Open SehatQ profile page",
+            "result": {
+              "status": "passed",
+              "duration": 4663000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "User edit profile with valid data name 'Automation', height '180', weight '9o', phone '08782521297', address 'Jalanin'",
+            "result": {
+              "status": "passed",
+              "duration": 11722000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "Show message error \"Berat Badan harus diisi dengan benar\"",
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "profile-feature;edit-profile-invalid-data-with-minimal-char-address",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Edit Profile Invalid Data With Minimal Char Address",
+        "tags": [
+          {
+            "name": "@profile",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "Open SehatQ login page",
+            "result": {
+              "status": "passed",
+              "duration": 3809000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "User login with email 'jiungkuy@gmail.com' and password 'Coba@123'",
+            "result": {
+              "status": "passed",
+              "duration": 14926000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "Open SehatQ profile page",
+            "result": {
+              "status": "passed",
+              "duration": 4576000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "User edit profile with valid data name 'Automation', height '180', weight '90', phone '08782521297', address 'Ja'",
+            "result": {
+              "status": "passed",
+              "duration": 10680000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "Show message error \"Kolom Alamat minimal 3\"",
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "profile-feature;edit-profile-invalid-data-with-invalid-phone-number",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Edit Profile Invalid Data With Invalid Phone Number",
+        "tags": [
+          {
+            "name": "@profile",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "Open SehatQ login page",
+            "result": {
+              "status": "passed",
+              "duration": 3135000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "User login with email 'jiungkuy@gmail.com' and password 'Coba@123'",
+            "result": {
+              "status": "passed",
+              "duration": 13471000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "Open SehatQ profile page",
+            "result": {
+              "status": "passed",
+              "duration": 4536000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "User edit profile with valid data name 'Automation', height '180', weight '90', phone 'jjs', address 'Jalanin'",
+            "result": {
+              "status": "passed",
+              "duration": 10394000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "Show message error \"No. Telp harus diisi dengan benar\"",
+            "result": {
+              "status": "passed",
+              "duration": 27000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
