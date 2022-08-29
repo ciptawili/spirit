@@ -15,12 +15,16 @@
       {
         "id": "login-feature;login-with-valid-data",
         "keyword": "Scenario",
-        "line": 4,
+        "line": 5,
         "name": "Login With Valid Data",
         "tags": [
           {
             "name": "@login",
             "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 4
           }
         ],
         "type": "scenario",
@@ -28,32 +32,31 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
+            "line": 6,
             "name": "Open SehatQ login page",
             "result": {
               "status": "passed",
-              "duration": 5135000000
+              "duration": 7005000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 6,
+            "line": 7,
             "name": "User login with email 'jiungkuy@gmail.com' and password 'Coba@123'",
             "result": {
               "status": "passed",
-              "duration": 25201000000
+              "duration": 24264000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 7,
+            "line": 8,
             "name": "Login Success",
             "result": {
-              "status": "failed",
-              "duration": 10152000000,
-              "error_message": "AssertionError: Timed out retrying after 10000ms: Expected to find content: 'Login Berhasil' but never did.\n    at Function.assertTextContains (https://account.sehatq.com/__cypress/tests?p=cypress/e2e/features/login.feature:521:10)\n    at Context.eval (https://account.sehatq.com/__cypress/tests?p=cypress/e2e/features/login.feature:428:29)\n    at Context.resolveAndRunStepDefinition (https://account.sehatq.com/__cypress/tests?p=cypress/e2e/features/login.feature:16978:29)\n    at Context.eval (https://account.sehatq.com/__cypress/tests?p=cypress/e2e/features/login.feature:16299:35)"
+              "status": "passed",
+              "duration": 621000000
             }
           }
         ]
@@ -61,12 +64,16 @@
       {
         "id": "login-feature;login-with-invalid-data-invalid-email",
         "keyword": "Scenario",
-        "line": 15,
+        "line": 17,
         "name": "Login With Invalid Data Invalid Email",
         "tags": [
           {
             "name": "@login",
             "line": 1
+          },
+          {
+            "name": "@negative",
+            "line": 10
           }
         ],
         "type": "scenario",
@@ -74,31 +81,31 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 10,
+            "line": 12,
             "name": "Open SehatQ login page",
             "result": {
               "status": "passed",
-              "duration": 5001000000
+              "duration": 3208000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 11,
+            "line": 13,
             "name": "User login with email 'testdulu' and password '123456'",
             "result": {
               "status": "passed",
-              "duration": 7154000000
+              "duration": 6538000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 12,
+            "line": 14,
             "name": "Show message error 'Email harus diisi dengan benar'",
             "result": {
               "status": "passed",
-              "duration": 87000000
+              "duration": 40000000
             }
           }
         ]
@@ -106,12 +113,16 @@
       {
         "id": "login-feature;login-with-invalid-data-invalid-password",
         "keyword": "Scenario",
-        "line": 16,
+        "line": 18,
         "name": "Login With Invalid Data invalid Password",
         "tags": [
           {
             "name": "@login",
             "line": 1
+          },
+          {
+            "name": "@negative",
+            "line": 10
           }
         ],
         "type": "scenario",
@@ -119,31 +130,31 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 10,
+            "line": 12,
             "name": "Open SehatQ login page",
             "result": {
               "status": "passed",
-              "duration": 3652000000
+              "duration": 2691000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 11,
+            "line": 13,
             "name": "User login with email 'testdulu' and password '123'",
             "result": {
               "status": "passed",
-              "duration": 6589000000
+              "duration": 6300000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 12,
+            "line": 14,
             "name": "Show message error 'Kolom Password minimal 6'",
             "result": {
               "status": "passed",
-              "duration": 90000000
+              "duration": 53000000
             }
           }
         ]
@@ -151,12 +162,16 @@
       {
         "id": "login-feature;login-with-invalid-data-blank-password",
         "keyword": "Scenario",
-        "line": 18,
+        "line": 21,
         "name": "Login With Invalid Data Blank Password",
         "tags": [
           {
             "name": "@login",
             "line": 1
+          },
+          {
+            "name": "@negative",
+            "line": 20
           }
         ],
         "type": "scenario",
@@ -164,31 +179,31 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 19,
+            "line": 22,
             "name": "Open SehatQ login page",
             "result": {
               "status": "passed",
-              "duration": 2842000000
+              "duration": 2678000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 20,
+            "line": 23,
             "name": "User login with email 'jiungkuy@gmail.com' and blank password",
             "result": {
               "status": "passed",
-              "duration": 4772000000
+              "duration": 2397000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 21,
+            "line": 24,
             "name": "Show message error 'Password wajib diisi'",
             "result": {
               "status": "passed",
-              "duration": 66000000
+              "duration": 82000000
             }
           }
         ]

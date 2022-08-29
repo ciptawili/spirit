@@ -14,4 +14,8 @@ export class HomePage{
         base.clickSelectedElement(SELECTOR.MENU_PROFILE)
     }
 
+    static homePageAfterLoginDisplayed(){
+        base.verifyElementExist(SELECTOR.ICON_PROFILE)
+    }
+
 }

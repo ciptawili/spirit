@@ -1,5 +1,6 @@
 import { Given, When, Then} from 'cypress-cucumber-preprocessor/steps'
 import * as LoginPage from '../pageObject/login_page'
+import * as HomePage from '../pageObject/Home_page'
 import base from "../step_definitions/common/base_function";
 
 When (`User login with email {string} and password {string}`, (email,password) => {
@@ -14,7 +15,8 @@ When (`User login with email {string} and blank password`, (email) => {
 
 
 Then (`Login Success`, () => {
-    base.assertTextContains('Login Berhasil')
+    HomePage.HomePage.homePageAfterLoginDisplayed()
+    HomePage.HomePage.clickIconProfile()
 })
 
 Then (`Show message error {string}`, (message) => {

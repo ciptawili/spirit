@@ -32,7 +32,7 @@
             "name": "Open SehatQ login page",
             "result": {
               "status": "passed",
-              "duration": 3058000000
+              "duration": 4458000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "User login with email 'jiungkuy@gmail.com' and password 'Coba@123'",
             "result": {
               "status": "passed",
-              "duration": 25840000000
+              "duration": 15403000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "Open SehatQ profile page",
             "result": {
               "status": "passed",
-              "duration": 5444000000
+              "duration": 3969000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "User edit profile with valid data",
             "result": {
               "status": "passed",
-              "duration": 12344000000
+              "duration": 9474000000
             }
           },
           {
@@ -72,7 +72,7 @@
             "name": "Success edit profile",
             "result": {
               "status": "passed",
-              "duration": 1434000000
+              "duration": 1167000000
             }
           }
         ]
@@ -97,7 +97,7 @@
             "name": "Open SehatQ login page",
             "result": {
               "status": "passed",
-              "duration": 4828000000
+              "duration": 3281000000
             }
           },
           {
@@ -107,7 +107,7 @@
             "name": "User login with email 'jiungkuy@gmail.com' and password 'Coba@123'",
             "result": {
               "status": "passed",
-              "duration": 21161000000
+              "duration": 15304000000
             }
           },
           {
@@ -117,7 +117,7 @@
             "name": "Open SehatQ profile page",
             "result": {
               "status": "passed",
-              "duration": 6320000000
+              "duration": 4465000000
             }
           },
           {
@@ -127,7 +127,7 @@
             "name": "User edit profile with valid data name '123', height '180', weight '90', phone '08782521297', address 'Jalanin'",
             "result": {
               "status": "passed",
-              "duration": 13572000000
+              "duration": 11382000000
             }
           },
           {
@@ -137,7 +137,7 @@
             "name": "Show message error \"Nama harus diisi dengan huruf.\"",
             "result": {
               "status": "passed",
-              "duration": 26000000
+              "duration": 76000000
             }
           }
         ]
@@ -162,7 +162,7 @@
             "name": "Open SehatQ login page",
             "result": {
               "status": "passed",
-              "duration": 3052000000
+              "duration": 3472000000
             }
           },
           {
@@ -171,8 +171,8 @@
             "line": 13,
             "name": "User login with email 'jiungkuy@gmail.com' and password 'Coba@123'",
             "result": {
-              "status": "failed",
-              "error_message": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://account.sehatq.com/__cypress/runner/cypress_runner.js:151177:74)\n    at https://account.sehatq.com/__cypress/runner/cypress_runner.js:151609:16\n    at tryCatcher (https://account.sehatq.com/__cypress/runner/cypress_runner.js:11318:23)\n    at https://account.sehatq.com/__cypress/runner/cypress_runner.js:6440:41\n    at tryCatcher (https://account.sehatq.com/__cypress/runner/cypress_runner.js:11318:23)\n    at Promise._settlePromiseFromHandler (https://account.sehatq.com/__cypress/runner/cypress_runner.js:9253:31)\n    at Promise._settlePromise (https://account.sehatq.com/__cypress/runner/cypress_runner.js:9310:18)\n    at Promise._settlePromise0 (https://account.sehatq.com/__cypress/runner/cypress_runner.js:9355:10)\n    at Promise._settlePromises (https://account.sehatq.com/__cypress/runner/cypress_runner.js:9431:18)\n    at _drainQueueStep (https://account.sehatq.com/__cypress/runner/cypress_runner.js:6025:12)\n    at _drainQueue (https://account.sehatq.com/__cypress/runner/cypress_runner.js:6018:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://account.sehatq.com/__cypress/runner/cypress_runner.js:6034:5)\n    at Async.drainQueues (https://account.sehatq.com/__cypress/runner/cypress_runner.js:5904:14)\nFrom Your Spec Code:\n    at Context.stepTest (https://account.sehatq.com/__cypress/tests?p=cypress/e2e/features/profile.feature:16307:6)\n    at eval (https://account.sehatq.com/__cypress/tests?p=cypress/e2e/features/profile.feature:16326:22)\nat Array.forEach (<anonymous>)\n    at Context.eval (https://account.sehatq.com/__cypress/tests?p=cypress/e2e/features/profile.feature:16325:24)"
+              "status": "passed",
+              "duration": 14243000000
             }
           },
           {
@@ -181,7 +181,8 @@
             "line": 14,
             "name": "Open SehatQ profile page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 5074000000
             }
           },
           {
@@ -190,7 +191,8 @@
             "line": 15,
             "name": "User edit profile with valid data name 'Automation', height '18o', weight '90', phone '08782521297', address 'Jalanin'",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 13044000000
             }
           },
           {
@@ -199,7 +201,8 @@
             "line": 16,
             "name": "Show message error \"Tinggi Badan harus diisi dengan benar\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 59000000
             }
           }
         ]
@@ -224,7 +227,7 @@
             "name": "Open SehatQ login page",
             "result": {
               "status": "passed",
-              "duration": 28839000000
+              "duration": 3977000000
             }
           },
           {
@@ -234,7 +237,7 @@
             "name": "User login with email 'jiungkuy@gmail.com' and password 'Coba@123'",
             "result": {
               "status": "passed",
-              "duration": 17512000000
+              "duration": 22178000000
             }
           },
           {
@@ -244,7 +247,7 @@
             "name": "Open SehatQ profile page",
             "result": {
               "status": "passed",
-              "duration": 4663000000
+              "duration": 6918000000
             }
           },
           {
@@ -254,7 +257,7 @@
             "name": "User edit profile with valid data name 'Automation', height '180', weight '9o', phone '08782521297', address 'Jalanin'",
             "result": {
               "status": "passed",
-              "duration": 11722000000
+              "duration": 11693000000
             }
           },
           {
@@ -264,7 +267,7 @@
             "name": "Show message error \"Berat Badan harus diisi dengan benar\"",
             "result": {
               "status": "passed",
-              "duration": 22000000
+              "duration": 85000000
             }
           }
         ]
@@ -289,7 +292,7 @@
             "name": "Open SehatQ login page",
             "result": {
               "status": "passed",
-              "duration": 3809000000
+              "duration": 3103000000
             }
           },
           {
@@ -299,7 +302,7 @@
             "name": "User login with email 'jiungkuy@gmail.com' and password 'Coba@123'",
             "result": {
               "status": "passed",
-              "duration": 14926000000
+              "duration": 14025000000
             }
           },
           {
@@ -309,7 +312,7 @@
             "name": "Open SehatQ profile page",
             "result": {
               "status": "passed",
-              "duration": 4576000000
+              "duration": 5179000000
             }
           },
           {
@@ -319,7 +322,7 @@
             "name": "User edit profile with valid data name 'Automation', height '180', weight '90', phone '08782521297', address 'Ja'",
             "result": {
               "status": "passed",
-              "duration": 10680000000
+              "duration": 13378000000
             }
           },
           {
@@ -329,7 +332,7 @@
             "name": "Show message error \"Kolom Alamat minimal 3\"",
             "result": {
               "status": "passed",
-              "duration": 19000000
+              "duration": 117000000
             }
           }
         ]
@@ -354,7 +357,7 @@
             "name": "Open SehatQ login page",
             "result": {
               "status": "passed",
-              "duration": 3135000000
+              "duration": 4282000000
             }
           },
           {
@@ -364,7 +367,7 @@
             "name": "User login with email 'jiungkuy@gmail.com' and password 'Coba@123'",
             "result": {
               "status": "passed",
-              "duration": 13471000000
+              "duration": 14697000000
             }
           },
           {
@@ -374,7 +377,7 @@
             "name": "Open SehatQ profile page",
             "result": {
               "status": "passed",
-              "duration": 4536000000
+              "duration": 5397000000
             }
           },
           {
@@ -384,7 +387,7 @@
             "name": "User edit profile with valid data name 'Automation', height '180', weight '90', phone 'jjs', address 'Jalanin'",
             "result": {
               "status": "passed",
-              "duration": 10394000000
+              "duration": 11614000000
             }
           },
           {
@@ -394,7 +397,7 @@
             "name": "Show message error \"No. Telp harus diisi dengan benar\"",
             "result": {
               "status": "passed",
-              "duration": 27000000
+              "duration": 98000000
             }
           }
         ]
